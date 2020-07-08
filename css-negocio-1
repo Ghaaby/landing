@@ -1,123 +1,641 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,700);
-body{min-width:100%!important;margin:0;padding:0}
-body .negocio{font-size:1rem;line-height:1.5;font-family:Roboto,sans-serif;color:#212529;background-color:#fff;margin:0;padding:0}
-.negocio img{width:100%;height:auto}
-.container{width:100%;max-width:1140px;margin:0 auto;box-sizing:border-box;padding:0 20px;position:relative}
-.row{clear:both}
-.col{float:left;margin:0 4% 0 0;box-sizing:border-box}
-.col:last-child{margin-right:0}
-.one.col{width:4.66666666667%}
-.two.col{width:13.3333333333%}
-.three.col{width:22%}
-.four.col{width:30.6666666667%}
-.five.col{width:39.3333333333%}
-.six.col{width:48%}
-.seven.col{width:56.6666666667%}
-.eight.col{width:65.3333333333%}
-.nine.col{width:74%}
-.ten.col{width:82.6666666667%}
-.eleven.col{width:91.3333333333%}
-.twelve.col{width:100%;margin:0}
-.col.last{margin:0}
-@media all and (max-width:550px){.eight.col,.eleven.col,.five.col,.four.col,.nine.col,.one.col,.seven.col,.six.col,.ten.col,.three.col,.two.col{float:none;width:100%}
-.hide-on-mobile{display:none!important;width:0;height:0}}
-.negocio .container:after,.negocio .row:after{content:"";display:table;clear:both}
-.negocio hr{border:0;height:1px;background:#EEE;clear:both}
-.negocio p{margin-top:0;margin-bottom:1rem;line-height:1.5}
-.negocio h1,.negocio h2,.negocio h3,.negocio h4,.negocio h5,.negocio h6{font-family:inherit;font-weight:700;line-height:1.1;color:inherit;margin-top:1.5rem;margin-bottom:1rem;text-transform:uppercase}
-.negocio h1{font-size:3.2rem}
-.negocio h2{font-size:2.8rem;margin:1.5rem 0}
-.negocio h2:after{content:"";display:block;width:50px;height:7px;background:#FF4136;margin:20px auto 0}
-.negocio h3{font-size:1.5rem}
-.negocio h4{font-size:1.2rem}
-.negocio h5{font-size:1.1rem}
-.negocio h6{font-size:1rem}
-.negocio p{font-family:Roboto,sans-serif}
-.negocio button{color:#25A197;height:50px;line-height:48px;font-size:1em;padding:0 40px;background:#fff;margin-top:10px;cursor:pointer}
-.negocio .bold{font-weight:700}
-.negocio button:hover{opacity:.7}
-.negocio header{padding:20px 0;position:fixed;width:100%;z-index:9999;background:#001F3F}
-.negocio .scrolled{background:#000}
-.negocio header .logo{font-weight:700;text-transform:uppercase;color:#FFF;margin-top:0;position:absolute;top:-10px;font-size:2rem}
-.negocio header .mainNav{top:0;max-height:30px;z-index:999;width:100%;overflow:hidden;-webkit-transition:all .3s;transition:all .3s}
-.negocio header .openNav{max-height:300px!important}
-.negocio header nav{width:100%}
-.negocio header nav ul{list-style:none;overflow:hidden;text-align:right;padding:0;margin:0}
-.negocio header nav ul li{display:inline-block;margin-left:35px}
-.negocio header nav ul a{text-decoration:none;color:#fff;text-transform:uppercase;font-size:.9em;font-weight:700}
-.negocio header nav ul a:hover{color:#FF4136}
-.negocio header .mobileToggle{display:none;cursor:pointer;font-size:20px;position:absolute;right:20px;top:6px;width:30px}
-.negocio header .mobileToggle span{width:25px;height:2px;margin-bottom:6px;background:#fff;display:block}
-@media only screen and (max-width:550px){.negocio header nav{width:100%}
-.negocio header nav ul{padding-top:0;margin-bottom:22px;text-align:center;width:100%}
-.negocio header nav ul li{width:100%;padding:7px 0;margin:0}
-.negocio header nav ul li:first-child{margin-top:70px}
-.negocio header .mobileToggle{display:block}}
-.negocio #hero{background:#001F3F;padding:200px 0 120px;text-align:center}
-.negocio #hero h2{text-align:center;font-size:4.6em;text-transform:capitalize;margin-top:0;line-height:1;color:#FF4136;font-weight:300}
-.negocio #hero h2:after{display:none}
-.negocio #hero p{color:rgb(255,255,255,.7);font-size:1rem;text-transform:uppercase;letter-spacing:2px;font-weight:400;line-height:21px;text-align:center;width:60%;display:block;margin:0 auto;padding-bottom:40px}
-.negocio #hero .button{border:0;color:#fff;height:50px;line-height:48px;font-size:.9rem;padding:0 40px;background:#FF4136;display:inline-block;margin:0 auto;font-family:Roboto,sans-serif;text-transform:uppercase;font-weight:700}
-.negocio #hero .white{color:#fff;font-weight:700}
-@media all and (max-width:550px){.negocio #hero button{margin-bottom:20px}
-.negocio #hero h2{font-size:2.2em}
-.negocio #hero p{font-size:.8em;line-height:21px;width:100%}}
-.negocio #about{background:#FFF;padding:120px 0}
-.negocio #about .icon{font-size:1em;padding-right:10px}
-.negocio #work{background:#F4F4F4;padding:120px 0;cursor:pointer}
-.negocio #work .work{position:relative}
-.negocio #work .work p{text-align:center;font-size:.9em}
-.negocio #work .work h4{color:#FF4136}
-.negocio #work .work-overlay{color:#fff;position:absolute;top:0;right:0;bottom:0;left:0;display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;height:auto;padding:10px}
-.negocio #work .work .work-overlay{opacity:0;transition:all .4s ease-in-out}
-.negocio #work .work:hover .work-overlay{opacity:1;transform:scale(1.05)}
-.negocio #work .work{transition:all .4s ease-in-out}
-.negocio #work .work:hover{transform:scale(1.05);box-shadow:0 4px 10px 0 rgba(0,0,0,.2)}
-.negocio #work .work img{display:block}
-.negocio #services{background:#FFF;padding:120px 0}
-.negocio .progressBar{margin-bottom:1.66em}
-.negocio .progressBar h4{margin-bottom:.33em;font-size:1rem}
-.negocio .progressBarContainer{width:100%;height:8px;background:#E1E1E1;overflow:hidden}
-.negocio .progressBarValue{height:8px;float:left;background:#FF4136}
-.negocio .value-00{width:0}
-.negocio .value-10{width:10%}
-.negocio .value-20{width:20%}
-.negocio .value-30{width:30%}
-.negocio .value-40{width:40%}
-.negocio .value-50{width:50%}
-.negocio .value-60{width:60%}
-.negocio .value-70{width:70%}
-.negocio .value-80{width:80%}
-.negocio .value-90{width:90%}
-.negocio .value-100{width:100%}
-.negocio #pricing{background:#F4F4F4;padding:120px 0}
-.negocio #pricing .card{position:relative;background:#FFF;padding:30px;text-align:center;transition:all 300ms ease-out}
-.negocio #pricing .card:hover{transform:scale(1.05);box-shadow:0 4px 10px 0 rgba(0,0,0,.1)}
-.negocio #pricing .card h3{text-transform:uppercase;color:#ccc;margin-top:0;font-size:1.5em}
-.negocio #pricing .card h4{font-weight:700;text-transform:uppercase;color:#FF4136;font-size:4em;margin:0}
-.negocio #pricing .card p{margin:10px 0}
-.negocio #pricing .grey{color:#CCC;text-decoration:line-through}
-.negocio #pricing .month{font-size:20px;color:#001F3F}
-.negocio #pricing .card button{border:0;color:#FFF;height:50px;line-height:48px;font-size:1em;padding:0 40px;background:#001F3F;margin-top:10px}
-@media all and (max-width:550px){.negocio #pricing .card{margin:40px 0}}
-.negocio #contact{background:#FFF;padding:120px 0;min-height:400px}
-.negocio #contact textarea{float:left;width:100%;max-width:100%;border:none;margin:.5rem 0;padding:.5rem;border-radius:.3rem;background:#F4F4F4;color:#525252;font-family:'Open Sans';font-size:18px}
-.negocio #contact input{float:left;width:100%;max-width:100%;border:none;margin:.5rem 0;padding:.5rem;background:#F4F4F4;color:#525252;font-family:'Open Sans';font-size:18px}
-.negocio #contact input[type=submit],.negocio textarea[type=submit]{border:0;color:#FFF;height:50px;line-height:48px;font-size:1em;padding:0 40px;background:#FF4136;margin-top:10px;width:auto}
-.negocio #contact input::placeholder,.negocio textarea::placeholder{color:#525252}
-.negocio #contact input.error,.negocio textarea.error{background:#AD4747;color:#fff}
-.negocio #contact input.error::placeholder,.negocio textarea.error::placeholder{color:#000}
-.negocio #contact textarea{height:10rem}
-.negocio footer{background:#000f1e;padding:120px 0}
-.negocio footer a{color:#FFF;font-size:.9em;text-transform:uppercase;font-weight:700}
-.negocio footer a:hover{color:#FF4136}
-.negocio footer a{text-decoration:none}
-.negocio footer ul{list-style-type:none;padding:0}
-.negocio footer ul li{display:inline;padding-right:25px;font-weight:500}
-.negocio footer p{color:#d5d5d5;font-size:1em;margin:0}
-.negocio footer h2{text-transform:uppercase;color:#FFF;margin-top:0;font-size:2rem;font-weight:700;width:130px}
-.negocio footer h2:after{display:none}
-.negocio footer hr{border-top:3px solid #fff;margin:20px 0}
-@media all and (max-width:550px){.negocio footer ul li{display:block}}
-.negocio .center{text-align:center}
-.negocio .padDown{padding-bottom:50px}
+body {
+    min-width: 100%!important;
+    margin: 0;
+    padding: 0;
+}
+
+body .negocio{
+	font-size: 1rem;
+    line-height: 1.5;
+    font-family: Roboto, sans-serif;
+    color: rgb(33, 37, 41);
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+}
+
+.negocio img {
+	width: 100%;
+	height: auto;
+}
+/* Responsive Grid */
+
+
+ .container {
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 0 20px;
+	position: relative;
+}
+ .row {
+	clear: both;
+}
+/* Columns */
+
+ .col {
+	float: left;
+	margin: 0 4% 0 0;
+	box-sizing: border-box;
+}
+ .col:last-child {
+	margin-right: 0;
+}
+ .one.col {
+	width: 4.66666666667%;
+}
+ .two.col {
+	width: 13.3333333333%;
+}
+ .three.col {
+	width: 22%;
+}
+ .four.col {
+	width: 30.6666666667%;
+}
+ .five.col {
+	width: 39.3333333333%;
+}
+ .six.col {
+	width: 48%;
+}
+ .seven.col {
+	width: 56.6666666667%;
+}
+ .eight.col {
+	width: 65.3333333333%;
+}
+ .nine.col {
+	width: 74.0%; 
+}
+ .ten.col {
+	width: 82.6666666667%;
+}
+ .eleven.col {
+	width: 91.3333333333%;
+}
+ .twelve.col {
+	width: 100%;
+	margin: 0;
+}
+
+/* For Relic Browsers */
+ .col.last {
+	margin: 0;
+}
+
+
+/* Mobile Devices */
+
+@media all and (max-width: 550px) {
+.one.col, .two.col, .three.col, .four.col, .five.col, .six.col, .seven.col, .eight.col, .nine.col, .ten.col, .eleven.col {
+	float: none;
+	width: 100%;
+}
+ .hide-on-mobile {
+	display: none !important;
+	width: 0;
+	height: 0;
+}
+}
+
+.negocio .container:after, .negocio .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Hr */
+
+.negocio hr {
+	border: 0;
+	height: 1px;
+	background: #EEEEEE;
+	clear: both;
+}
+
+/* Typography */
+
+.negocio p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+	line-height: 1.5;
+}
+.negocio h1, .negocio h2, .negocio h3, .negocio h4, .negocio h5, .negocio h6 {
+	font-family: inherit;
+	font-weight: 700;
+	line-height: 1.1;
+	color: inherit;
+	margin-top: 1.5rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+}
+.negocio h1 {
+	font-size: 3.2rem;
+}
+.negocio h2 {
+	font-size: 2.8rem;
+	margin: 1.5rem 0;
+}
+.negocio h2:after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 7px;
+	background: #FF4136;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.negocio h3 {
+	font-size: 1.5rem;
+}
+.negocio h4 {
+	font-size: 1.2rem;
+}
+.negocio h5 {
+	font-size: 1.1rem;
+}
+.negocio h6 {
+	font-size: 1rem;
+}
+.negocio p {
+	font-family: 'Roboto', sans-serif;
+}
+.negocio button {
+	color: #25A197;
+	height: 50px;
+	line-height: 48px;
+	font-size: 1em;
+	padding: 0 40px;
+	background: #ffffff;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.negocio .bold {
+	font-weight: 700;
+}
+.negocio button:hover {
+	opacity: .7;
+}
+/* Header */
+.negocio header {
+	padding: 20px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	background: #001F3F;
+}
+.negocio .scrolled {
+	background: #000;
+}
+.negocio header .logo {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 0;
+	position: absolute;
+	top: -10px;
+	font-size: 2rem;
+}
+.negocio header .mainNav {
+	top: 0px;
+	max-height: 30px;
+	z-index: 999;
+	width: 100%;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.negocio header .openNav {
+	max-height: 300px !important;
+}
+.negocio header nav {
+	width: 100%;
+}
+.negocio header nav ul {
+	list-style: none;
+	overflow: hidden;
+	text-align: right;
+	padding: 0;
+	margin: 0;
+}
+.negocio header nav ul li {
+	display: inline-block;
+	margin-left: 35px;
+}
+.negocio header nav ul a {
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	font-weight: 700;
+}
+
+.negocio header nav ul a:hover {
+	color: #FF4136;
+}
+.negocio header .mobileToggle {
+	display: none;
+	cursor: pointer;
+	font-size: 20px;
+	position: absolute;
+	right: 20px;
+	top: 6px;
+	width: 30px;
+}
+.negocio header .mobileToggle span {
+	width: 25px;
+	height: 2px;
+	margin-bottom: 6px;
+	background: #ffffff;
+	display: block;
+}
+
+@media only screen and (max-width: 550px) {
+.negocio header nav {
+	width: 100%;
+}
+.negocio header nav ul {
+	padding-top: 0px;
+	margin-bottom: 22px;
+	text-align: center;
+	width: 100%;
+}
+.negocio header nav ul li {
+	width: 100%;
+	padding: 7px 0;
+	margin: 0;
+}
+.negocio header nav ul li:first-child {
+	margin-top: 70px;
+}
+.negocio header .mobileToggle {
+	display: block;
+}
+}
+/* Hero One */
+
+.negocio #hero {
+background: #001F3F;
+	padding: 200px 0 120px 0;
+	text-align: center;
+}
+.negocio #hero h2 {
+	text-align: center;
+    font-size: 4.6em;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1;
+    color: #FF4136;
+	font-weight: 300;
+}
+.negocio #hero h2:after {
+	display: none;
+}
+.negocio #hero h3 {
+}
+.negocio #hero p {
+    color: rgb(255,255,255,0.7);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+    line-height: 21px;
+    text-align: center;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+.negocio #hero .button {
+	border: 0;
+	color: #fff;
+	height: 50px;
+	line-height: 48px;
+	font-size: 0.9rem;
+	padding: 0 40px;
+	background: #FF4136;
+	display: inline-block;
+    margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.negocio #hero .white {
+	color: #fff;
+	font-weight: 700;
+}
+
+
+@media all and (max-width: 550px) {
+.negocio #hero button {
+	margin-bottom: 20px;
+}
+.negocio #hero h2 {
+	font-size: 2.2em;
+}
+.negocio #hero p {
+	font-size: 0.8em;
+	line-height: 21px;
+	width: 100%;
+}
+}
+/* About Section */
+
+.negocio #about {
+	background: #FFFFFF;
+	padding: 120px 0;
+}
+.negocio #about .icon {
+	font-size: 1em;
+	padding-right: 10px;
+}
+/* Work Section */
+
+.negocio #work {
+	background: #F4F4F4;
+	padding: 120px 0;
+	cursor: pointer;
+}
+.negocio #work .work {
+	position: relative;
+}
+.negocio #work .work p {
+	text-align: center;
+	font-size: 0.9em;
+}
+.negocio #work .work h4 {
+	color: #FF4136;
+}
+.negocio #work .work-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	padding: 10px;
+}
+.negocio #work .work .work-overlay {
+	opacity: 0;
+	transition: all .4s ease-in-out;
+}
+.negocio #work .work:hover .work-overlay {
+	opacity: 1;
+	transform: scale(1.05);
+}
+.negocio #work .work {
+	transition: all .4s ease-in-out;
+}
+.negocio #work .work:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+.negocio #work .work img {
+	display: block;
+}
+/* Services Section */
+
+.negocio #services {
+	background: #FFFFFF;
+	padding: 120px 0;
+}
+.negocio .progressBar {
+	margin-bottom: 26px;
+	margin-bottom: 1.66em;
+}
+.negocio .progressBar h4 {
+	margin-bottom: 7px;
+	margin-bottom: .33em;
+	font-size: 1rem;
+}
+.negocio .progressBarContainer {
+	width: 100%;
+	height: 8px;
+	background: #E1E1E1;
+	overflow: hidden;
+}
+.negocio .progressBarValue {
+	height: 8px;
+	float: left;
+	background: #FF4136;
+}
+.negocio .value-00 {
+	width: 0;
+}
+.negocio .value-10 {
+	width: 10%;
+}
+.negocio .value-20 {
+	width: 20%;
+}
+.negocio .value-30 {
+	width: 30%;
+}
+.negocio .value-40 {
+	width: 40%;
+}
+.negocio .value-50 {
+	width: 50%;
+}
+.negocio .value-60 {
+	width: 60%;
+}
+.negocio .value-70 {
+	width: 70%;
+}
+.negocio .value-80 {
+	width: 80%;
+}
+.negocio .value-90 {
+	width: 90%;
+}
+.negocio .value-100 {
+	width: 100%;
+}
+/* Pricing Section */
+
+.negocio #pricing {
+	background: #F4F4F4;
+	padding: 120px 0;
+}
+.negocio #pricing .card {
+	position: relative;
+	background: #FFFFFF;
+	padding: 30px;
+	text-align: center;
+	transition: all 300ms ease-out;
+}
+.negocio #pricing .card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
+}
+.negocio #pricing .card h3 {
+	text-transform: uppercase;
+	color: #cccccc;
+	margin-top: 0;
+	font-size: 1.5em;
+}
+.negocio #pricing .card h4 {
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FF4136;
+	font-size: 4em;
+	margin: 0;
+}
+.negocio #pricing .card p {
+	margin: 10px 0;
+}
+.negocio #pricing .grey {
+	color: #CCCCCC;
+	text-decoration: line-through;
+}
+.negocio #pricing .month {
+	font-size: 20px;
+	color: #001F3F;
+}
+.negocio #pricing .card button {
+	border: 0;
+	color: #FFFFFF;
+	height: 50px;
+	line-height: 48px;
+	font-size: 1em;
+	padding: 0 40px;
+	background: #001F3F;
+	margin-top: 10px;
+}
+
+@media all and (max-width: 550px) {
+.negocio #pricing .card {
+	margin: 40px 0;
+}
+}
+/*Contact Section */
+
+.negocio #contact {
+	background: #FFFFFF;
+	padding: 120px 0;
+	min-height: 400px;
+}
+.negocio #contact textarea {
+	float: left;
+	width: 100%;
+	max-width: 100%;
+	border: none;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	border-radius: 0.3rem;
+	background: #F4F4F4;
+	color: #525252;
+	font-family: 'Open Sans';
+	font-size: 18px;
+}
+.negocio #contact input {
+	float: left;
+	width: 100%;
+	max-width: 100%;
+	border: none;
+	margin: 0.5rem 0;
+	padding: 0.5rem;
+	background: #F4F4F4;
+	color: #525252;
+	font-family: 'Open Sans';
+	font-size: 18px;
+}
+.negocio #contact input[type=submit], .negocio textarea[type=submit] {
+	border: 0;
+	color: #FFFFFF;
+	height: 50px;
+	line-height: 48px;
+	font-size: 1em;
+	padding: 0 40px;
+	background: #FF4136;
+	margin-top: 10px;
+	width: auto;
+}
+.negocio #contact input::placeholder, .negocio textarea::placeholder {
+ color: #525252;
+}
+.negocio #contact input.error, .negocio textarea.error {
+	background: #AD4747;
+	color: #fff;
+}
+.negocio #contact input.error::placeholder, .negocio textarea.error::placeholder {
+ color: black;
+}
+.negocio #contact textarea {
+	height: 10rem;
+}
+/* Footer One */
+
+.negocio footer {
+	background: #000f1e;
+	padding: 120px 0;
+}
+.negocio footer a {
+	color: #FFFFFF;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.negocio footer a:hover {
+	color: #FF4136;
+}
+.negocio footer a {
+	text-decoration: none;
+}
+.negocio footer ul {
+	list-style-type: none;
+	padding: 0;
+	
+}
+.negocio footer ul li {
+	display: inline;
+	padding-right: 25px;
+	font-weight: 500;
+}
+
+
+.negocio footer p {
+	color: #d5d5d5;
+	font-size: 1em;
+	margin: 0;
+}
+.negocio footer h2 {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 0;
+	font-size: 2rem;
+	font-weight: 700;
+	width: 130px;
+}
+.negocio footer h2:after {
+	display: none;
+}
+.negocio footer hr {
+	border-top: 3px solid #ffffff;
+	margin: 20px 0 20px 0;
+}
+
+@media all and (max-width: 550px) {
+.negocio footer ul li {
+	display: block;
+}
+}
+/* Misc */
+
+.negocio .center {
+	text-align: center;
+}
+.negocio .padDown {
+	padding-bottom: 50px;
+}
